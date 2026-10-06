@@ -810,7 +810,7 @@ spec:
       - name: TEST_FRAMEWORK
         value: $(params.TEST_FRAMEWORK)
       - name: RUN_AS
-        value: "non-admin"
+        value: "admin"
       - name: SPECS
         value: "specs/results/"
       - name: TAGS
@@ -823,7 +823,7 @@ spec:
       - install-pipelines-operator
     taskRef:
       name: release-tests
-    timeout: 30m
+    timeout: 45m
     when:
       - input: release-tests-results
         operator: in
