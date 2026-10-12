@@ -933,7 +933,7 @@ spec:
       - update-pipelines-operator
     taskRef:
       name: release-tests
-    timeout: 30m
+    timeout: 45m
     when:
       - input: release-tests-results
         operator: in
